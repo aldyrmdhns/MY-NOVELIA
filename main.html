@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNovelia</title>
+    <link rel="icon" href="Pictures/MyNovelia-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar"> 
+            <img src="Pictures/MyNovelia-logo.svg" alt="logo1" height="115px" width="250px">
+            <div class="navbar-menu">
+                <ul>
+                    <li> <a href="#hero-section"> HOME </a></li>
+                    <li> <a href="#content-section"> NOVEL </a></li>
+                    <li> <a href=""> ABOUT ME </a></li>
+                </ul>
+                <img src="Icon/moon.png" id="icon" class="changeMode" alt="icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <img src="Pictures/image 9.png" alt="">
+                    <div class="side-content-body">
+                        <h3 class="cursor-pointer"> Lorem ipsum </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...  </p>
+                    </div>
+            </div>
+            <div class="sidebar-content">
+                <img src="Pictures/image 10.png" alt="">
+                    <div class="side-content-body">
+                        <h3 class="cursor-pointer"> Lorem ipsum </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...  </p>
+                    </div>
+            </div>
+        </aside>
+
+        <article id="hero-section"  class="hero-section">
+            <!-- <aside class="side-content">
+                <div class="side-content-1">
+                    <img src="Pictures/image 9.png" alt="">
+                    <div class="side-content-body">
+                        <h3> Lorem ipsum </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...  </p>
+                    </div>
+                </div>
+
+                <div class="side-content-1">
+                    <img src="Pictures/image 10.png" alt="">
+                    <div class="side-content-body">
+                        <h3> Lorem ipsum </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...  </p>
+                    </div>
+                </div>
+            </aside> -->
+                <div>
+                    <h1> Immerse Yourself </h1>
+                    <p> To The Endless Journey Ahead </p>
+                </div>
+            <img src="Pictures/hero-sect.svg" alt="hero1">
+        </article>
+    
+        <article class="desc-section">
+            <div>
+                <div>
+                    <h2 class="cursor-pointer"> Lorem ipsum </h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                    </p>
+                </div>
+                <div class="desc-footer">
+                    <p> June 18th 2023 </p>
+                    <p class="font-weight-bold"> Read More </p>
+                </div>
+            </div>
+            <img src="Pictures/pic6 1.png" alt="desc">
+        </article>
+    
+        <article id="content-section" class="content-section">
+            <div class="content">
+                <img src="Pictures/pic1 1.png" alt="pic1">
+                <div class="content-body">
+                    <h3 class="cursor-pointer"> Lorem ipsum </h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                </div>
+                <div class="content-footer">
+                    <p> May 7th 2023 </p>
+                    <p class="font-weight-bold"> Read More </p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="Pictures/image 4.png" alt="pic2">
+                <div class="content-body">
+                    <h3 class="cursor-pointer"> Lorem ipsum </h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                </div>
+                <div class="content-footer">
+                    <p> May 7th 2023 </p>
+                    <p class="font-weight-bold"> Read More </p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="Pictures/pic4 1.png" alt="pic3">
+                <div class="content-body">
+                    <h3 class="cursor-pointer"> Lorem ipsum </h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                </div>
+                <div class="content-footer">
+                    <p> May 7th 2023 </p>
+                    <p class="font-weight-bold"> Read More </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="hot-novel">
+            <div>
+                <div>
+                    <h1 class="cursor-pointer"> Lorem ipsum </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+                </div>
+                <div class="hot-footer">
+                    <p> January 12 </p>
+                    <p class="font-weight-bold"> Read More </p>
+                </div>
+            </div>
+            <img src="Pictures/image 8.png" alt="pic4">
+        </article>
+    </main>
+
+    <footer>
+        <p> | <b> MyNovelia </b>| Aldy Ramadhan Syahputra | 2023 | </p>
+    </footer>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "Icon/sun.png";
+            } else {
+                icon.src = "Icon/moon.png"
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+
+:root {
+    --textP : #6C6866;
+    --title : #333837;
+    --cardHolder : #F7FAFC;
+    --background : #e8f8ff;
+    --topBottom : rgb(250, 250, 247);
+    --borderTop : rgb(224, 224, 224)
+}
+.dark-theme{
+    --textP : #e7e7e7;
+    --title : #f3ecec;
+    --heroColor : #f3ecec;
+    --cardHolder : #6d6d6d;
+    --background : #394144;
+    --topBottom : rgb(83, 83, 83);
+    --borderTop : rgb(94, 94, 94);
+}
+
+/* --textP : #6C6866;
+    --title : #333837;
+    --cardHolder : #F7FAFC;
+    --background : #e8f8ff;
+    --topBottom : rgb(250, 250, 247);
+    --borderTop : rgb(224, 224, 224)
+} */
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.changeMode {
+    align-self: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+/* --------------------------------- DESC SECTION --------------------------------- */
+
+.navbar {
+    background-color: var(--topBottom);
+    box-shadow: 0 3.2rem 7.1rem 0 rgba(1, 1, 1, 0.1);
+    height: 7.0rem;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2.5rem;
+    cursor: pointer;
+}
+
+.navbar-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+}
+
+.navbar-menu ul li a{
+    color: var(--title);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar-menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(97, 108, 139);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-menu ul li:hover::after{
+    width: 100%;
+}
+
+/* --------------------------------- HERO SECTION --------------------------------- */
+
+.hero-section {
+    display: flex;
+    height: 30.5rem;
+    padding-left: 20.5rem;
+}
+
+.hero-section h1 {
+    color: var(--heroColor);
+    font-size: 61px;
+    font-weight: bolder;
+    margin: 0.6rem 0;
+}
+
+.hero-section p {
+    font-size: 25px;
+    color: var(--textP);
+}
+
+/* .hero-section > aside {
+    width: 20%;
+} */
+
+.hero-section > header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section > img {
+    width: 50%;
+    height: 26.5rem;
+    align-self: center;
+}
+
+/* --------------------------------- SIDE CONTENT SECTION --------------------------------- */
+
+.sidebar {
+    background: var(--cardHolder);
+    position: absolute;
+    margin: 2rem 1rem;
+    padding: 2rem 0;
+    width: 15.5%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 1, 0.1);
+}
+
+.sidebar-content {
+    margin: 0 5%;
+}
+
+.sidebar-content > img {
+    object-fit: fill;
+    padding: 6% 5%;
+    height: 17rem;
+    width: 15rem;
+}
+
+.sidebar-content h3 {
+    color: var(--title);
+    font-size: 1.5rem;
+}
+
+.sidebar-content p {
+    color: var(--textP);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* .side-content > .side-content-1 {
+    height: 10.1rem;
+    margin: 4.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.side-content-1 {
+    box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 1, 0.1);;
+    border-top: 0.1rem solid rgb(238, 238, 238);;
+}
+
+.side-content-1 h3 {
+    width: 10rem;
+    margin: 0.1rem 0;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.side-content-1 p {
+    width: 10rem;
+    font-size: 0.7rem;
+    justify-content: center
+}
+
+.side-content-1 > img {
+    object-fit: fill;
+    padding: 6% 5%;
+    height: 9rem;
+    width: 7rem;
+} */
+
+/* --------------------------------- DESC SECTION --------------------------------- */
+
+.desc-section {
+    height: 22.3rem;
+    margin: 4.5rem 0;
+    padding-left: 20.5rem;
+    padding-right: 5rem;
+    display: flex;
+}
+
+.desc-section > div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 1.2rem 2.1rem 1.1rem rgba(1, 1, 1, 0.1);
+    border-top: 0.1rem solid var(--borderTop);
+    background: var(--topBottom);
+}
+
+.desc-section h2 {
+    color: var(--title);
+}
+
+.desc-section p {
+    color: var(--textP);
+}
+
+.desc-section > div > div {
+    width: 30.3rem;
+}
+
+.desc-section > img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.desc-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-section > div:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* --------------------------------- CONTENT SECTION --------------------------------- */
+
+.content-section {
+    min-height: 29.1rem;
+    margin: 4.5rem 0;
+    padding-left: 20.5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+}
+
+.content-section .content {
+    height: 100%;
+}
+
+.content {
+    box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 1, 0.1);
+    background: var(--cardHolder);
+}
+
+.content h3 {
+    color: var(--title);
+    font-size: 1.7rem;
+    margin: 0 1.2rem 0 0;
+}
+
+.content p {
+    color: var(--textP);
+    font-size: 1rem;
+}
+
+.content > img {
+    object-fit: fill;
+    height: 17.5rem;
+    width: 100%;
+}
+
+.content > .content-body {
+    padding: 1.7rem;
+}
+
+.content > .content-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.0rem;
+}
+
+.content:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* --------------------------------- HOT CONTENT SECTION --------------------------------- */
+
+.hot-novel {
+    max-height: 48.7rem;
+    margin: 4rem 0;
+    padding-left: 20.5rem;
+    padding-right: 5rem;
+    display: flex;
+}
+
+.hot-novel h1 {
+    font-size: 3.9rem;
+    color: var(--title);
+}
+
+.hot-novel p {
+    color: var(--textP);
+    font-size: 1rem;
+}
+
+.hot-novel > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background: var(--cardHolder);
+    box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 1, 0.1);
+}
+
+.hot-novel > div > div {
+    width: 38.8rem;
+}
+
+.hot-novel > img {
+    width: 50%;
+}
+
+.hot-novel > div > .hot-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.0rem;
+}
+
+.hot-novel > div:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* --------------------------------- FOOTER SECTION --------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 4rem;
+    background-color: var(--topBottom);
+}
+
+footer > div {
+    gap: 30px;
+}
+
+/* --------------------------------- RESPONSIVE SECTION --------------------------------- */
+
+@media only screen and (max-width: 420px) {
+    .sidebar {
+        display: none;
+    }
+
+    .hero-section{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .hero-section > header {
+        width: 100%;
+        height: 17rem;
+    }
+
+    .hero-section > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .desc-section {
+        flex-wrap: wrap;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .desc-section > div {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .desc-section > div > div{
+        width: 100%;
+    }
+
+    .desc-section > img {
+        width: 100%;
+    }
+
+    .content-section {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    .hot-novel{
+        flex-wrap: wrap;
+        height: 100%;
+        padding-left: 10%;
+    }
+
+    .hot-novel > div {
+        width: 100%;
+    }
+
+    .hot-novel > div > div{
+        width: 100%;
+    }
+
+    .hot-novel > img {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
